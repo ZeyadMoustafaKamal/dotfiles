@@ -119,3 +119,21 @@ export PATH="/home/zeyad/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
 
 export PATH="$HOME/.local/bin:$PATH"
 
+
+# aliases
+
+alias vi=nvim
+alias vim=nvim
+alias nv=nvim
+
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+fpath+=~/.zfunc
+
+# android paths
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools#
+
