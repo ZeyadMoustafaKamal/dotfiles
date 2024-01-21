@@ -1,0 +1,1 @@
+/home/zeyad/.dotfiles/config/nvim/lua/core/default_config.lua
