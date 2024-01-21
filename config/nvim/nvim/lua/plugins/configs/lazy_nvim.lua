@@ -1,1 +1,0 @@
-/home/zeyad/.dotfiles/config/nvim/lua/plugins/configs/lazy_nvim.lua
