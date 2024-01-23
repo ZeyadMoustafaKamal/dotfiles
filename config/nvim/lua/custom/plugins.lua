@@ -79,6 +79,12 @@ local plugins = {
       vim.list_extend(opts.ensure_installed, { "html", "css" })
     end,
   },
+  {
+    'barrett-ruth/live-server.nvim',
+    build = 'yarn global add live-server',
+    config = true
+  }
+
 }
 
 return plugins
