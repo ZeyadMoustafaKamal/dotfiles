@@ -125,6 +125,8 @@ export PATH="$HOME/.local/bin:$PATH"
 alias vi=nvim
 alias vim=nvim
 alias nv=nvim
+alias cd=z
+
 
 autoload -Uz compinit
 zstyle ':completion:*' menu select
@@ -133,7 +135,19 @@ fpath+=~/.zfunc
 # android paths
 
 export ANDROID_HOME=$HOME/Android/Sdk
-export ANDROID_SDK_ROOT=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools#
+
+
+# bun completions
+[ -s "/home/zeyad/.bun/_bun" ] && source "/home/zeyad/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+eval "$(zoxide init zsh)"
 
