@@ -11,6 +11,8 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="gozilla"
 
+# ZSH_THEME="spaceship"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -71,7 +73,7 @@ ZSH_THEME="gozilla"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git pip python docker docker-compose zsh-autosuggestions rust zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -150,4 +152,12 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 
 eval "$(zoxide init zsh)"
+
+# spaceship
+
+SPACESHIP_PROMPT_ORDER=(
+  dir            # Current directory section
+  git            # Git section (git_branch + git_status)
+  docker         # Docker section
+)
 
