@@ -2,9 +2,9 @@
 
 #### How to install
 
-- clone this repo
+- clone this repo `git clone github.com/ZeyadMoustafaKamal/dotfiles`
 - install rcm depending on your distribution
-- move this repo to` ~/.dotfiles/`
+- move this repo to`~/.dotfiles/`
 - run `rcup -v` to Update the symlinks
 - make sure that everything is ok by running `lsrc` this should show you all the rcfiles managed by rcm
 
