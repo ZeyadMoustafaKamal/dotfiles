@@ -43,6 +43,7 @@ local plugins = {
       filters = {
         custom = {
           ".venv",
+          "^.git$"
         }
       }
     },
