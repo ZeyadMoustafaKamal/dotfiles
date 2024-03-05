@@ -39,14 +39,9 @@ local plugins = {
   },
   {
     "nvim-tree/nvim-tree.lua",
-    opts = {
-      filters = {
-        custom = {
-          ".venv",
-          "^.git$"
-        }
-      }
-    },
+    opts = function ()
+     return require("custom.configs.nvimtree")
+    end
   },
   {
   "jose-elias-alvarez/null-ls.nvim",
@@ -84,6 +79,9 @@ local plugins = {
     'barrett-ruth/live-server.nvim',
     build = 'yarn global add live-server',
     config = true
+  },
+  {
+    "rest-nvim/rest.nvim",
   }
 
 }
