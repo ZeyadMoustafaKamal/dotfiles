@@ -9,9 +9,7 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="gozilla"
-
-# ZSH_THEME="spaceship"
+# ZSH_THEME="gozilla"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -128,8 +126,8 @@ alias vi=nvim
 alias vim=nvim
 alias nv=nvim
 alias cd=z
-
-
+alias cat="bat -pp"
+ 
 autoload -Uz compinit
 zstyle ':completion:*' menu select
 fpath+=~/.zfunc
@@ -153,17 +151,30 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 eval "$(zoxide init zsh)"
 
-# spaceship
-
-SPACESHIP_PROMPT_ORDER=(
-  dir            # Current directory section
-  git            # Git section (git_branch + git_status)
-  docker         # Docker section
-)
-
 # pyenv config
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 eval "$(pyenv virtualenv-init -)"
+
+
+
+# npm config
+
+NPM_PACKAGES="${HOME}/.npm-packages"
+
+export PATH="$PATH:$NPM_PACKAGES/bin"
+
+# Preserve MANPATH if you already defined it somewhere in your config.
+# Otherwise, fall back to `manpath` so we can inherit from `/etc/manpath`.
+export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
+
+
+# export root user bin dir to the path
+
+export PATH="$PATH:/root/.local/bin"
+
+# Starthip promp
+eval "$(starship init zsh)"
+
