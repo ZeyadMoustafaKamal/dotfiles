@@ -125,7 +125,7 @@ export PATH="$HOME/.local/bin:$PATH"
 alias vi=nvim
 alias vim=nvim
 alias nv=nvim
-alias cd=z
+# alias cd=z
 alias cat="bat -pp"
  
 autoload -Uz compinit
@@ -149,7 +149,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd "cd" zsh)"
 
 # pyenv config
 export PYENV_ROOT="$HOME/.pyenv"
