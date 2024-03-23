@@ -81,9 +81,8 @@ local plugins = {
     config = true
   },
   {
-    "rest-nvim/rest.nvim",
+    "kalekundert/vim-coiled-snake"
   }
-
 }
 
 return plugins

@@ -1,11 +1,10 @@
 local options = {
-  filters = {
-    custom = {
+    filters = {
+      custom = {
       ".venv",
       "^.git$"
     }
   }
 }
-
 
 return options
