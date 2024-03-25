@@ -175,6 +175,10 @@ export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
 
 export PATH="$PATH:/root/.local/bin"
 
-# Starthip promp
+# Starthip prompt
 eval "$(starship init zsh)"
+
+
+alias l="eza -lah --icons"
+alias ll="eza -lah --icons --tree"
 
