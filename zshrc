@@ -180,5 +180,5 @@ eval "$(starship init zsh)"
 
 
 alias l="eza -lah --icons"
-alias ll="eza -lah --icons --tree"
+alias ll="eza -lah --icons --tree --git-ignore"
 
