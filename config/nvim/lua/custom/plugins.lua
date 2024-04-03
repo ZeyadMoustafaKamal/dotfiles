@@ -82,7 +82,18 @@ local plugins = {
   },
   {
     "kalekundert/vim-coiled-snake"
+  },
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    lazy = false,
+  },
+  {
+    "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    lazy = false
   }
+
 }
 
 return plugins

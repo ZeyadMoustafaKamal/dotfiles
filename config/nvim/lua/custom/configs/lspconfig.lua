@@ -10,10 +10,13 @@ lspconfig.pyright.setup({
   capabilities = capabilities,
   filetypes = {"python"},
   settings = {
-    python = {analysis = {
+    python = {
+      analysis = {
       autoImportCompletions = true,
       reportFunctionMemberAccess = false,
-      reportInvalidTypeForm = false
+      reportInvalidTypeForm = false,
+      typeCheckingMode = "off",
+      reportUnusedVariable = false
     }}
   }
 })
