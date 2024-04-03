@@ -125,19 +125,14 @@ export PATH="$HOME/.local/bin:$PATH"
 alias vi=nvim
 alias vim=nvim
 alias nv=nvim
-# alias cd=z
 alias cat="bat -pp"
- 
+alias l="eza -lah --icons"
+alias ll="eza -lah --icons --tree --git-ignore"
+
+
 autoload -Uz compinit
 zstyle ':completion:*' menu select
 fpath+=~/.zfunc
-
-# android paths
-
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools#
-
 
 # bun completions
 [ -s "/home/zeyad/.bun/_bun" ] && source "/home/zeyad/.bun/_bun"
@@ -170,15 +165,7 @@ export PATH="$PATH:$NPM_PACKAGES/bin"
 # Otherwise, fall back to `manpath` so we can inherit from `/etc/manpath`.
 export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
 
-
-# export root user bin dir to the path
-
-export PATH="$PATH:/root/.local/bin"
-
 # Starthip prompt
 eval "$(starship init zsh)"
 
-
-alias l="eza -lah --icons"
-alias ll="eza -lah --icons --tree --git-ignore"
 
