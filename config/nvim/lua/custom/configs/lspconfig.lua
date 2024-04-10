@@ -87,6 +87,9 @@ lspconfig.rust_analyzer.setup({
             procMacro = {
                 enable = true
             },
+            check = {
+                ignore = {"dead_code"}
+            },
         }
     }
 })
