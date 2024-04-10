@@ -123,7 +123,6 @@ export PATH="$HOME/.local/bin:$PATH"
 # aliases
 
 alias vi=nvim
-alias vim=nvim
 alias nv=nvim
 alias cat="bat -pp"
 alias l="eza -lah --icons"
