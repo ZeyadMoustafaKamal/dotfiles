@@ -168,4 +168,12 @@ export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
 # Starthip prompt
 eval "$(starship init zsh)"
 
+# Mojo lib path
+
+export MOJO_PYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.10.so
+
+# mise config
+
+eval "$(~/.local/bin/mise activate zsh)"
+
 
