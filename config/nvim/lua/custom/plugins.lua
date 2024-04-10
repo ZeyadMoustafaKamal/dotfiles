@@ -92,6 +92,14 @@ local plugins = {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     lazy = false
+  },
+  {
+    "ThePrimeagen/vim-be-good",
+    lazy = false
+  },
+  {
+    "czheo/mojo.vim",
+    lazy = false
   }
 
 }
