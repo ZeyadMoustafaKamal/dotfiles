@@ -118,11 +118,10 @@ export PATH="/home/zeyad/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
 # Python bin
 
 export PATH="$HOME/.local/bin:$PATH"
-
+export EDITOR=nvim
 
 # aliases
 
-alias vi=nvim
 alias nv=nvim
 alias cat="bat -pp"
 alias l="eza -lah --icons"
