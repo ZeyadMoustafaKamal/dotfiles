@@ -72,7 +72,7 @@ local plugins = {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
-      vim.list_extend(opts.ensure_installed, { "html", "css" })
+      vim.list_extend(opts.ensure_installed, { "html", "css" , "kdl"})
     end,
   },
   {
@@ -100,8 +100,7 @@ local plugins = {
   {
     "czheo/mojo.vim",
     lazy = false
-  }
-
+  },
 }
 
 return plugins
